@@ -1,0 +1,15 @@
+session_name: streamlit-tutorial
+start_directory: ~/streamlit-tutorial/
+windows:
+  - window_name: dev window
+    layout: main-horizontal
+    options:
+      main-pane-height: 67%
+    shell_command_before:
+      - source venv/bin/activate
+      #- tmux source /Users/bayuhanifianto/.config/tmux/tmux.conf
+    panes:
+      - shell_command:
+        - nvim
+        focus: True # pane no. 1
+      -  # pane no. 2
